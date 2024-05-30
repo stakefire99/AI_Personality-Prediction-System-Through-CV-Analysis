@@ -1,9 +1,7 @@
 from fileinput import filename
 import os
 import string
-import pymysql
-from flask import Flask, render_template, request, redirect, flash, send_file, session
-from passlib.hash import sha256_crypt
+from flask import Flask, render_template, request, redirect, flash, send_file, session import sha256_crypt
 import gc
 from werkzeug.utils import secure_filename
 import csv
@@ -29,7 +27,7 @@ from sklearn.metrics import accuracy_score, classification_report
 from sklearn.naive_bayes import MultinomialNB
 from test_utils import *
 
-UPLOAD_FOLDER = 'C:/Users/Phoebe E. A. Memsah/Downloads/web_platform_for_aptitude_assessment-master/web_platform_for_aptitude_assessment-master/CV/'
+UPLOAD_FOLDER = 'C:\Users\Shatakshee\Documents\GitHub\AI_Personality-Prediction-System-Through-CV-Analysis'
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif', 'pdf'}
 
 app = Flask(__name__)
